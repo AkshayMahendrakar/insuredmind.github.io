@@ -1,0 +1,33 @@
+<div class="login">
+    <div class="login-image">
+    </div>
+    <div class="login-field">
+        <mat-card>
+            <mat-card-title>Login</mat-card-title>
+      <mat-card-content>
+        <form>
+          <p>
+            <mat-form-field>
+              <input type="text" matInput placeholder="Username" [(ngModel)]="username" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+          </p>
+
+          <p>
+            <mat-form-field>
+              <input type="password" matInput placeholder="Password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+          </p>
+
+          <p *ngIf="error" class="error">
+            {{ error }}
+          </p>
+
+          <div class="button">
+            <button type="submit" mat-button (click)="submit()">Login</button>
+          </div>
+
+        </form>
+      </mat-card-content>
+    </mat-card>
+    </div>
+</div>

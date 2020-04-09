@@ -1,0 +1,14 @@
+<div class="header-container">
+    <div class="header-menu" (click)="navigateToRoute('home')">
+        Home
+    </div>
+    <div class="header-menu" (click)="navigateToRoute('about')">
+        About
+    </div>
+    <div *ngIf="data == 'yes'" class="header-menu" (click)="navigateToRoute('gallery')">
+        Gallery
+    </div>
+    <div class="header-menu" (click)="navigateToRoute('login')">
+        Login
+    </div>
+</div>
